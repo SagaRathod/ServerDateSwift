@@ -3,7 +3,8 @@ func serverTimeReturn  that allows you to  find current date in Swift 4.1
 
 Use this function for find server date in Swift.
 
-func serverTimeReturn(completionHandler:@escaping (_ getResDate: NSDate?) -> Void){
+
+      func serverTimeReturn(completionHandler:@escaping (_ getResDate: NSDate?) -> Void){
         
         let url = NSURL(string: "http://www.google.com")
         let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
